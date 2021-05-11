@@ -16,27 +16,24 @@ configurations {
 
 repositories {
 	mavenCentral()
-	maven{
-		url "https://plugins.gradle.org/m2/"
-	}
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
-	
-    implementation 'org.webjars:jquery:3.4.1'
+	implementation 'com.google.code.gson:gson:2.6.2'
+	implementation 'com.google.protobuf:protobuf-java:3.9.0'
+
+	implementation 'org.webjars:jquery:3.4.1'
 	implementation 'org.webjars:bootstrap:4.3.1'
 	implementation 'org.webjars:webjars-locator-core'
-
+	
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
 }
-
 
 test {
 	useJUnitPlatform()

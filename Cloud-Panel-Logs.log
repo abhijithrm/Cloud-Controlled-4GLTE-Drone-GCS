@@ -1,0 +1,45 @@
+2021-05-08 22:33:45.858  INFO [PID: 19056] - [    Test worker] c.o.d.DronecloudappApplicationTests      : Starting DronecloudappApplicationTests using Java 1.8.0_292 on abhijith-ThinkPad with PID 19056 (started by abhijith in /home/abhijith/Documents/dronecloudapp)
+2021-05-08 22:33:45.863  INFO [PID: 19056] - [    Test worker] c.o.d.DronecloudappApplicationTests      : No active profile set, falling back to default profiles: default
+2021-05-08 22:33:48.086  INFO [PID: 19056] - [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-08 22:33:48.276  INFO [PID: 19056] - [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-08 22:33:49.411  INFO [PID: 19056] - [    Test worker] c.o.d.DronecloudappApplicationTests      : Started DronecloudappApplicationTests in 4.15 seconds (JVM running for 5.698)
+2021-05-08 22:33:49.739  INFO [PID: 19056] - [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-09 13:23:18.670  INFO [PID: 4336] - [    Test worker] c.o.d.DronecloudappApplicationTests      : Starting DronecloudappApplicationTests using Java 1.8.0_292 on abhijith-ThinkPad with PID 4336 (started by abhijith in /home/abhijith/Documents/dronecloudapp)
+2021-05-09 13:23:18.675  INFO [PID: 4336] - [    Test worker] c.o.d.DronecloudappApplicationTests      : No active profile set, falling back to default profiles: default
+2021-05-09 13:23:20.679  INFO [PID: 4336] - [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-09 13:23:20.850  INFO [PID: 4336] - [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-09 13:23:21.979  INFO [PID: 4336] - [    Test worker] c.o.d.DronecloudappApplicationTests      : Started DronecloudappApplicationTests in 3.903 seconds (JVM running for 5.708)
+2021-05-09 13:23:22.422  INFO [PID: 4336] - [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-09 13:26:05.648[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mc.o.d.DronecloudappApplication          [0;39m [2m:[0;39m Starting DronecloudappApplication using Java 1.8.0_292 on abhijith-ThinkPad with PID 4628 (/home/abhijith/Documents/dronecloudapp/build/libs/dronecloudapp-0.0.1-SNAPSHOT.jar started by abhijith in /home/abhijith/Documents/dronecloudapp)
+[2m2021-05-09 13:26:05.652[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mc.o.d.DronecloudappApplication          [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2021-05-09 13:26:07.653[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2021-05-09 13:26:07.671[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2021-05-09 13:26:07.671[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2m2021-05-09 13:26:07.674[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.a.catalina.core.AprLifecycleListener  [0;39m [2m:[0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.6.5].
+[2m2021-05-09 13:26:07.674[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.a.catalina.core.AprLifecycleListener  [0;39m [2m:[0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+[2m2021-05-09 13:26:07.674[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.a.catalina.core.AprLifecycleListener  [0;39m [2m:[0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[2m2021-05-09 13:26:07.678[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.a.catalina.core.AprLifecycleListener  [0;39m [2m:[0;39m OpenSSL successfully initialized [OpenSSL 1.1.1f  31 Mar 2020]
+[2m2021-05-09 13:26:07.753[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2021-05-09 13:26:07.754[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1959 ms
+[2m2021-05-09 13:26:08.109[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-09 13:26:08.327[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page template: index
+[2m2021-05-09 13:26:09.079[0;39m [33m WARN[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[2m2021-05-09 13:26:09.080[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-09 13:26:09.086[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2m2021-05-09 13:26:09.120[0;39m [32m INFO[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2021-05-09 13:26:09.154[0;39m [31mERROR[0;39m [PID: [35m4628[0;39m] [2m-[0;39m [2m[           main][0;39m [36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
