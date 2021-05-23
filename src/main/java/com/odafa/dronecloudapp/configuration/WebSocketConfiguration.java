@@ -1,6 +1,6 @@
 package com.odafa.dronecloudapp.configuration;
 
-import com.odafa.dronecloudapp.Controller.VideoSocketHandler;
+import com.odafa.dronecloudapp.controller.VideoSocketHandler;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

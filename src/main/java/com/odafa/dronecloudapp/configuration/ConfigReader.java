@@ -20,7 +20,7 @@ public class ConfigReader {
 
     @Value("${app.drone.video-server-port}")
 	private int videoServerPort;
-   
+
     @Value("${app.drone.drone-id-length}")
 	private int droneIdLength;
 

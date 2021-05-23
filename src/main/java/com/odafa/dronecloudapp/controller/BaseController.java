@@ -1,8 +1,7 @@
-package com.odafa.dronecloudapp.Controller;
+package com.odafa.dronecloudapp.controller;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
-
 
 import com.odafa.dronecloudapp.configuration.ConfigReader;
 
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+
 //http endpoints
 @Slf4j
 @Controller
@@ -23,9 +23,13 @@ public class BaseController{
     private final ConfigReader configurations;//@Component used. Spring will inject object.
 
     @GetMapping("/")
-    public String indexPage()
+    public String indexPage(Model model)
     {
-        //log.debug("Index Page Opened");
+       		
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
+		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
         return "index";
     }
 

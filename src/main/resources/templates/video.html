@@ -17,7 +17,7 @@ const videoStreamClient = new VideoStreamClient(DRONE_ID, HOST_NAME, 80, VIDEO_E
 
 $(document).ready( function(){
   $("img").attr("id", "video" + DRONE_ID)
-  videoStreamClient.activateStream()//sets the img data to img element
+  videoStreamClient.activateStream()//sets the img data to img element.Makes request to java ws.
 });
 
 </script> 

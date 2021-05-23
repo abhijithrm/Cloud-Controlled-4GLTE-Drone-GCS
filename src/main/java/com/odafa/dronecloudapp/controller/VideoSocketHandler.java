@@ -1,4 +1,4 @@
-package com.odafa.dronecloudapp.Controller;
+package com.odafa.dronecloudapp.controller;
 import java.io.IOException;
 
 import com.odafa.dronecloudapp.service.VideoStreamManager;
