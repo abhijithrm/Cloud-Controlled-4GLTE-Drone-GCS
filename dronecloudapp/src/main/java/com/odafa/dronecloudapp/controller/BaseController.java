@@ -30,6 +30,7 @@ public class BaseController{
 		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
 		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
 		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
+        model.addAttribute("privateIP", configurations.getHostPrivateIP());
         return "index";
     }
 
@@ -42,7 +43,7 @@ public class BaseController{
         model.addAttribute("publicIp", getPublicIpAddress());
 		model.addAttribute("droneId", droneId);
 		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
-
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
 
         //log.debug("Index Page Opened");
         return "video";

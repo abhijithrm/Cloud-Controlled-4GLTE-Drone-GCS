@@ -79,12 +79,24 @@ const loadDronesData = function(data) {
 
 			$('.dronesList').append( renderDroneUIComponent(droneDTO));//add to drone list in html page
 
+			var coll = document.getElementById('collapsebtn'+droneDTO.id);
+			coll.addEventListener("click", function() {
+				this.classList.toggle("cactive");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				  content.style.maxHeight = null;
+				} else {
+				  content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			  });
+
 			//while adding html for new drone ,add click event handler too..that is whenever we find a drone with id not on the collection, initialize drone dto obj, add it to collection, render ui, attach click handler
 			$('.dronesList').on("click", ".dronesList-header", function (){
 				if ($(this).hasClass("active")) {
 					return;
 				}
 
+				
 				//close video feed and remove mission point marker for currently selected drone
 				$(".dronesList > .active").each(function (index) {
 					$(this).removeClass("active").next().slideToggle();
@@ -103,7 +115,8 @@ const loadDronesData = function(data) {
 								
 				activateViewFPV(droneDTO.id);
 
-				$(this).toggleClass("active").next().slideToggle();
+				$(this).toggleClass("active");
+				$('#collapsebtn'+droneDTO.id).next().next().slideToggle();//SLIDETOTOGGLE TOGGLES VISIBILITY
 
 			});
 

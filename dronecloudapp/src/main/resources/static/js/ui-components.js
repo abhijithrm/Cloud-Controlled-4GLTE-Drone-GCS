@@ -11,14 +11,17 @@ const renderMapPointDataComponent = function (pointId, alt, speed) {
 
 
 const renderDroneUIComponent = function (droneDTO) {
-    return '<div id="ctrlPanel1'+droneDTO.id+'" droneId="'+droneDTO.id+'" class="dronesList-header">Drone: '+droneDTO.id +
+    return '<button id ="collapsebtn'+droneDTO.id+'"class="collapsible">Drone: '+droneDTO.id + '</button>'+
+    '<div class="content">'+
+    '<div id="ctrlPanel1'+droneDTO.id+'" droneId="'+droneDTO.id+'" class="dronesList-header">Drone: '+droneDTO.id +
 
-        ' -> <label>Altitude (m): </label> <input type="text" id="infoAlt'+droneDTO.id+'" size="2" value="'+droneDTO.alt+'" disabled />' +
-        '<label> Speed (km/h): </label> <input type="text" id="infoSpeed'+droneDTO.id+'" size="2" value="'+droneDTO.speed+'" disabled />' +
-        '<label> Voltage: </label> <input type="text" id="infoBat'+droneDTO.id+'" size="2" value="'+droneDTO.battery+'" disabled />' +
+    ' <label>Altitude (m): </label> <input type="text" id="infoAlt'+droneDTO.id+'" size="2" value="'+droneDTO.alt+'" disabled />' +
+    '<label> Speed (km/h): </label> <input type="text" id="infoSpeed'+droneDTO.id+'" size="2" value="'+droneDTO.speed+'" disabled />' +
+    '<label> Voltage: </label> <input type="text" id="infoBat'+droneDTO.id+'" size="2" value="'+droneDTO.battery+'" disabled />' +
 
-        '<p id="onlineStatus'+droneDTO.id+'" class="drone-status">ONLINE</p>' +
-        '<p id="armedStatus'+droneDTO.id+'" class="drone-arm-status">'+droneDTO.state+'</p>  </div>' +
+    '<p id="onlineStatus'+droneDTO.id+'" class="drone-status">ONLINE</p>' +
+    '<p id="armedStatus'+droneDTO.id+'" class="drone-arm-status">'+droneDTO.state+'</p>  </div>'+
+    '</div>'+
 
         '<div class="dronesList-content" style="position:relative;">' +
 

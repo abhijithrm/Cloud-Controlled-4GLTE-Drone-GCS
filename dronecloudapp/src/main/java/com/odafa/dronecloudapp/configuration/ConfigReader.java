@@ -29,6 +29,9 @@ public class ConfigReader {
 
     @Value("${app.drone.default-altitude}")
 	private int defaultAltitude;
+
+    @Value("${app.drone.host-privateip}")
+	private String hostPrivateIP;
     
 }
 

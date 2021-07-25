@@ -31,6 +31,12 @@ class VideoStreamClient {
     getServerUrl() {
         return "ws://" + this.hostname + ":" + this.port + this.endpoint;
     }
+
+    disconnect() {
+        if (this.webSocket != null) {
+            this.webSocket.close();
+        }
+    }
 }
 
 //The Web Socket specification defines an API establishing "socket" connections between a web browser and a server. 
@@ -51,7 +57,7 @@ class Drone {
         this.id = id;
         this.lat = lat;
         this.lng = lng;
-        this.videoSocket = new VideoStreamClient(id, PUBLIC_IP, 80, VIDEO_ENDPOINT);
+        this.videoSocket = new VideoStreamClient(id, HOST_PRIVATEIP, 8085, VIDEO_ENDPOINT);
         this.posMark = new google.maps.Marker({
             position: { lat: lat, lng: lng },
             map: WORLD_MAP, 

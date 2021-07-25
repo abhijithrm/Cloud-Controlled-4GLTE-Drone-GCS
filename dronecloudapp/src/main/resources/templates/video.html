@@ -8,12 +8,13 @@
 
 <script th:inline="javascript">
 
-//values coming from bakend model....getVideoFeed()
+//values coming from backend model....getVideoFeed()
 const HOST_NAME	     = [[${publicIp}]]
 const DRONE_ID       = [[${droneId}]]
 const VIDEO_ENDPOINT = [[${videoEndpoint}]]
+const HOST_PRIVATEIP  = [[${privateIP}]]
 
-const videoStreamClient = new VideoStreamClient(DRONE_ID, HOST_NAME, 80, VIDEO_ENDPOINT)//obj in library.js
+const videoStreamClient = new VideoStreamClient(DRONE_ID, HOST_PRIVATEIP, 80, VIDEO_ENDPOINT)//obj in library.js
 
 $(document).ready( function(){
   $("img").attr("id", "video" + DRONE_ID)
