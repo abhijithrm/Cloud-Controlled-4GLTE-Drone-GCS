@@ -27,7 +27,7 @@ public class NetworkFormatter {
     }
 
     public static byte[] readNetworkMessage(InputStream in) throws Exception {
-		int ch1 = in.read();
+		int ch1 = in.read();//read() blocks until next byte of data is available
 		int ch2 = in.read();
 		int ch3 = in.read();
 		int ch4 = in.read();

@@ -32,6 +32,9 @@ public class ConfigReader {
 
     @Value("${app.drone.host-privateip}")
 	private String hostPrivateIP;
+
+    @Value("${app.drone.log-streamer-port}")
+	private int logStreamerPort;
     
 }
 

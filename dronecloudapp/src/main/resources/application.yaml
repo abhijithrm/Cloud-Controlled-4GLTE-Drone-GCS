@@ -7,6 +7,7 @@ app:
     video-ws-endpoint: /videofeed
     control-server-port: 1314
     video-server-port: 1313 #one bite size. As you know from the raspi, data sent to ws from raspi contains 1 byte drone id and rest img udp data
+    log-streamer-port: 1315
     drone-id-length: 1 # Amount of symbols
     default-altitude: 4
     default-speed: 15

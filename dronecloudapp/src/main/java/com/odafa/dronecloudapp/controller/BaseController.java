@@ -4,11 +4,12 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 import com.odafa.dronecloudapp.configuration.ConfigReader;
+import com.odafa.dronecloudapp.service.ControlManager;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PathVariable; 
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
 public class BaseController{
 
     private final ConfigReader configurations;//@Component used. Spring will inject object.
-
+    private final ControlManager controlManager;
     @GetMapping("/")
     public String indexPage(Model model)
     {
@@ -32,6 +33,14 @@ public class BaseController{
 		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
         model.addAttribute("privateIP", configurations.getHostPrivateIP());
         return "index";
+    }
+
+    //Server endpoint to return the log streamer page which displays real time console logs from the drone
+    @GetMapping("/logstreamer/{droneId}")
+    public String getClientLogs(Model model, @PathVariable("droneId") String droneId)
+    {
+		model.addAttribute("droneLogsCollection", controlManager.getConsoleLogsCollectionByDroneID(droneId));
+        return "dronelogs";
     }
 
 
